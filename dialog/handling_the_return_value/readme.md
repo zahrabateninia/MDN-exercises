@@ -1,0 +1,6 @@
+# Handling the return value from the dialog
+This example demonstrates the returnValue of the <dialog> element and how to close a modal dialog by using a form. By default, the returnValue is the empty string or the value of the button that submits the form within the <dialog> element, if there is one.
+
+This example opens a modal dialog when the "Show the dialog" button is activated. The dialog contains a form with a <select> and two <button> elements, which default to type="submit". An eventlistener updates the value of the "Confirm" button when the select option changes. If the "Confirm" button is activated to close the dialog, the current value of the button is the return value. If the dialog is closed by pressing the "Cancel" button, the returnValue is cancel.
+
+When the dialog is closed, the return value is displayed under the "Show the dialog" button. If the dialog is closed by pressing the Esc key, the returnValue is not updated and the close event doesn't occur so the text in the <output> is not updated.
